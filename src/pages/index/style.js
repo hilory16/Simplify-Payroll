@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color3Dark, primaryColor } from '../../themes/colors';
+import { color3Dark, primaryColor, secondaryColor } from '../../themes/colors';
 
 export const Container = styled.div`
     height:100vh;
@@ -99,9 +99,14 @@ export const Features = styled.div`
         background:white;
         padding:20px 30px;
         margin-bottom:30px;
-        transition:all ease .3s;
+        transition:all ease .5s;
+        pointer:cursor;
         :hover{
-            box-shadow:2px 3px 6px rgba(0,0,0,.3);
+            box-shadow:0px 3px 6px rgba(0,0,0,.5);
+            h6{
+                color:${secondaryColor};
+            }
+            
         }
         .feature-icon{
             margin-bottom:20px;
@@ -114,6 +119,7 @@ export const Features = styled.div`
             h6{
                 font-size:500;
                 font-size:22px;
+                transition:all ease .5s;
             }
         }
         .feature-body{
